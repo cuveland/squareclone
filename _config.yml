@@ -1,10 +1,8 @@
 # Site settings
-title: SquareClone example page
-email: cmail@cuveland.de
+title: Christoph Dressler
 description: >
   This site is an example for a simple Jekyll-powered portfolio website.
 baseurl: "/squaregen"
-url: "http://cuveland.de"
 
 # Build settings
 markdown: kramdown
