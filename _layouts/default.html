@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/squareclone.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	</head>
+	<body>
+		<header class="site-header">
+			<h1><a class="site-title" href="{{ site.baseurl }}/">Christoph Dressler</a></h1>
+			<ul class="site-nav">
+				<li class="active"><a href="index.html">Galleries</a></li>
+				<li><a href="#">Clients</a></li>
+				<li><a href="info.html">Info</a></li>
+			</ul>
+		</header>
+		{{ content }}
+		</body>
 </html>
