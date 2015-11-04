@@ -130,6 +130,7 @@ main figcaption {
 
 article {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row-reverse;
 	justify-content: space-around;
 	margin-left: -1.5rem;
@@ -145,7 +146,13 @@ article .description, article .content {
 
 article .description {
 	flex-basis: 17rem;
-	flex-grow: 0;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+article .content {	
+	flex-basis: 19rem;
+	flex-grow: 1000;
 	flex-shrink: 0;
 }
 
@@ -161,7 +168,7 @@ article h1 {
 
 article img {
 	width: 100%;
-	max-width: 750px;
+	max-width: 900px;
 	margin-bottom: 1rem;
 }
 
