@@ -18,7 +18,8 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 1.3rem;
+	margin-bottom: 0.8rem;
+	margin-top: -.5rem;
 	/* typography */
 	font-family: 'Cabin', sans-serif;
 	text-transform: uppercase;
@@ -27,6 +28,8 @@ header {
 
 header h1 {
 	margin: 0;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 	/* typography */
 	font-size: 2.1rem;
 	font-weight: normal;
@@ -36,6 +39,8 @@ header h1 {
 header ul {
 	padding: 0;
 	margin: 0;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 	list-style: none;
 	justify-content: space-around;
 	/* typography */
