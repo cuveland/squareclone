@@ -59,7 +59,7 @@ header h1 a:active, header h1 a:hover, header h1 .active {
 	color: #707070;
 }
 
-/* main tiles */
+/* main (tiles) */
 
 main { 
   display: flex;
@@ -99,4 +99,53 @@ main figcaption {
 	letter-spacing: 0.05rem;
 	text-align: center;
 	color: #404040;
+}
+
+/* article */
+
+article {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	margin-left: -1.5rem;
+	margin-bottom: 3rem;
+	/* typography */
+	font-family: 'Cabin', sans-serif;
+	line-height: 1.7em;
+}
+
+article .description, article .content {
+	margin-left: 1.5rem;
+}
+
+article .description {
+	flex-basis: 17rem;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+article h1 {
+	margin: 0;
+	/* typography */
+	text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #222;
+}
+
+article img {
+	width: 100%;
+	max-width: 750px;
+	margin-bottom: 1rem;
+}
+
+article a:link, article a:visited {
+  color: #222;
+	text-decoration: none;
+}
+
+article a:active, article a:hover {
+	color: #444;
+	text-decoration: underline;
 }
