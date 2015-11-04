@@ -3,7 +3,7 @@ title: SquareClone example page
 email: cmail@cuveland.de
 description: >
   This site is an example for a simple Jekyll-powered portfolio website.
-baseurl: "/squaregen/"
+baseurl: "/squaregen"
 url: "http://cuveland.de"
 
 # Build settings
