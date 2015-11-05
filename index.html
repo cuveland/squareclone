@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign galleries = site.galleries | sort: 'order' %}
-<main>{% for gallery in galleries %}
+<main class="site-index">{% for gallery in galleries %}
 	<figure>
 		<div class="frame">
 			<a href="{{ relative }}.{{ gallery.url }}">
