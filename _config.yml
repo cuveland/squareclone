@@ -9,6 +9,10 @@ navigation:
   - title: info
     url: info.html
 
+collections:
+  galleries:
+    output: true
+
 # Build settings
 markdown: kramdown
 highlighter: pygments

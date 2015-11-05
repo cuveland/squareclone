@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article>
+	<div class="description">
+		{{ content }}</div>
+	<div class="content">{% for item in page.images %}
+		<div class="frame">
+			<img src="{{ item }}">
+		</div>{% endfor %}		
+	</div>			
+</article>
