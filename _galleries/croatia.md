@@ -1,5 +1,5 @@
 ---
-layout: gallery
+title: Croatia
 images:
 - http://lorempixel.com/900/600/cats/6
 - http://lorempixel.com/g/900/600/cats/4

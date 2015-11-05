@@ -13,6 +13,13 @@ collections:
   galleries:
     output: true
 
+defaults:
+  - scope:
+      path: ""
+      type: galleries
+    values:
+      layout: gallery
+
 # Build settings
 markdown: kramdown
 highlighter: pygments
