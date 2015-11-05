@@ -6,8 +6,7 @@
 		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 		{% assign lvl = page.url | append:'X' | split:'/' | size %}
 		{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-		<link href="{{ relative }}css/normalize.css" rel="stylesheet">
-		<link href="{{ relative }}css/squareclone.css" rel="stylesheet">
+		<link href="{{ relative }}css/main.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="site-header">
