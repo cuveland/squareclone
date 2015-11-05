@@ -4,14 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-		<link href="{{ "/css/normalize.css" | prepend: site.baseurl }}" rel="stylesheet">
-		<link href="{{ "/css/squareclone.css" | prepend: site.baseurl }}" rel="stylesheet">
+		{% assign lvl = page.url | append:'X' | split:'/' | size %}
+		{% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+		<link href="{{ relative }}css/normalize.css" rel="stylesheet">
+		<link href="{{ relative }}css/squareclone.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="site-header">
-			<h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+			<h1><a class="site-title" href="{{ relative }}.">{{ site.title }}</a></h1>
 			<ul class="site-nav">{% for item in site.navigation %}
-				<li{% if page.url contains item.url %} class="active"{% endif %}><a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></li>{% endfor %}
+				<li{% if page.url contains item.url %} class="active"{% endif %}><a href="{{ relative }}{{ item.url }}">{{ item.title }}</a></li>{% endfor %}
 			</ul>
 		</header>
 		{{ content }}

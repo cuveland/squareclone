@@ -1,14 +1,13 @@
 # Site settings
 title: Christoph Dressler
-baseurl: "/squaregen"
 
 navigation:
   - title: galleries
-    url: /index.html
+    url: index.html
   - title: clients
-    url: /article.html
+    url: article.html
   - title: info
-    url: /info.html
+    url: info.html
 
 # Build settings
 markdown: kramdown
