@@ -10,10 +10,8 @@
 	<body>
 		<header class="site-header">
 			<h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-			<ul class="site-nav">
-				<li class="active"><a href="index.html">Galleries</a></li>
-				<li><a href="#">Clients</a></li>
-				<li><a href="info.html">Info</a></li>
+			<ul class="site-nav">{% for item in site.navigation %}
+				<li{% if page.url contains item.url %} class="active"{% endif %}><a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></li>{% endfor %}
 			</ul>
 		</header>
 		{{ content }}

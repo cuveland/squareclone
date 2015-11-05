@@ -1,11 +1,20 @@
 # Site settings
 title: Christoph Dressler
-description: >
-  This site is an example for a simple Jekyll-powered portfolio website.
 baseurl: "/squaregen"
+
+navigation:
+  - title: galleries
+    url: /index.html
+  - title: clients
+    url: /article.html
+  - title: info
+    url: /info.html
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
 safe: true
 lsi: false
+
+sass:
+  style: compressed
