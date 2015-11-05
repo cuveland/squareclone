@@ -30,3 +30,6 @@ exclude: ["CNAME", "README.md", "Gemfile", "Gemfile.lock"]
 
 #sass:
 #  style: compressed
+
+prose:
+  siteurl: "http://sc.cuveland.de"
