@@ -13,7 +13,9 @@
 		<header class="site-header">
 			<h1><a class="site-title" href="{{ relative }}.">{{ site.title }}</a></h1>
 			<ul class="site-nav">{% for item in site.navigation %}
-				<li{% if page.url contains item.url %} class="active"{% endif %}><a href="{{ relative }}{{ item.url }}">{{ item.title }}</a></li>{% endfor %}
+				<li{% if page.url contains item.url %} class="active"{% endif %}>
+					<a href="{% unless item.url contains '://' %}{{ relative }}{% endunless %}{{ item.url }}">{{ item.title }}</a>
+				</li>{% endfor %}
 			</ul>
 		</header>
 		{{ content }}

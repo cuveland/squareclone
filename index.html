@@ -5,7 +5,7 @@ layout: default
 <main>{% for gallery in galleries %}
 	<figure>
 		<div class="frame">
-			<a href="article.html">
+			<a href="{{ relative }}.{{ gallery.url }}">
 				<img src="{{ gallery.key_image }}">
 			</a>
 		</div>

@@ -5,7 +5,7 @@ navigation:
   - title: galleries
     url: index.html
   - title: clients
-    url: article.html
+    url: http://example.com
   - title: info
     url: info.html
 
