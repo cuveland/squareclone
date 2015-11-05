@@ -26,7 +26,7 @@ highlighter: pygments
 safe: true
 lsi: false
 
-exclude: ["README.md", "Gemfile", "Gemfile.lock"]
+exclude: ["CNAME", "README.md", "Gemfile", "Gemfile.lock"]
 
 #sass:
 #  style: compressed
