@@ -1,5 +1,7 @@
 ---
 title: Croatia
+key_image: http://lorempixel.com/600/400/nightlife/6
+order: 60
 images:
 - http://lorempixel.com/900/600/cats/6
 - http://lorempixel.com/g/900/600/cats/4
