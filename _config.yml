@@ -26,5 +26,7 @@ highlighter: pygments
 safe: true
 lsi: false
 
+exclude: ["Gemfile", "Gemfile.lock"]
+
 sass:
   style: compressed
