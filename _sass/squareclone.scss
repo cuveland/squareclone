@@ -1,6 +1,12 @@
 /*! squareclone.css v0.1 | Jan de Cuveland */
 
-@import url(https://fonts.googleapis.com/css?family=Cabin);
+@font-face {
+  font-display: swap;
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cabin-v26-latin-regular.woff2') format('woff2');
+}
 
 body {
 	background-color: rgb(253, 253, 253);
