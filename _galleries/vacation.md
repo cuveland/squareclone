@@ -1,7 +1,7 @@
 ---
-title: Andaman Sea
+title: Vacation
 key_image: ../images/example.jpeg
-order: 70
+order: 20
 images:
 - ../images/example.jpeg
 - ../images/example.jpeg

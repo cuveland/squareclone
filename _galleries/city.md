@@ -1,7 +1,7 @@
 ---
-title: Denmark
+title: City
 key_image: ../images/example.jpeg
-order: 20
+order: 40
 images:
 - ../images/example.jpeg
 - ../images/example.jpeg

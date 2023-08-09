@@ -1,5 +1,5 @@
 ---
-title: Croatia
+title: Beach
 key_image: ../images/example.jpeg
 order: 60
 images:

@@ -1,7 +1,7 @@
 ---
-title: Gabriela
+title: Sea
 key_image: ../images/example.jpeg
-order: 50
+order: 70
 images:
 - ../images/example.jpeg
 - ../images/example.jpeg
